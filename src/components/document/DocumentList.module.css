@@ -1,0 +1,18 @@
+.documentlist__container {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-color: #EC8FD0;
+    /* background-image: linear-gradient(to right bottom, #eb2f64cc, #ba265dcc); */
+    border-radius: 1rem;
+}
+
+
+.documentlist {
+    width: 80%;
+    margin: 0 auto 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+    list-style: none;
+}

@@ -1,0 +1,6 @@
+@import "./globalstyles/_base.css";
+@import "./globalstyles/_variables.css";
+@import "./globalstyles/_utilities.css";
+@import "./globalstyles/_animations.css";
+@import "./globalstyles/_typography.css";
+@import "./globalstyles/_layout.css";
