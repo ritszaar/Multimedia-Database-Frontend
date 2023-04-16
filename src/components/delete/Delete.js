@@ -1,5 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 import DocumentList from "../document/DocumentList";
+import LoadingSpinner from "../loadingspinner/LoadingSpinner";
 import SearchBar from "../searchbar/SearchBar";
 import classes from "./Delete.module.css";
 
@@ -126,7 +127,7 @@ const Delete = () => {
         <div className={classes["search"]}>
             {radioButtons}
             <SearchBar onChangeQuery={queryChangeHandler} />
-            {!documents && <div className={classes["placeholder-content"]}>Loading...</div>}
+            {!documents && <LoadingSpinner/>}
             {documents &&
                 documents.filter((document) =>
                     queryMatch(document.title, query.slice())

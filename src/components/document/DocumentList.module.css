@@ -1,7 +1,8 @@
 .documentlist__container {
     padding-top: 10rem;
     padding-bottom: 10rem;
-    background-color: #EC8FD0;
+    margin-bottom: 1rem;
+    background-color: #d3d3d3;
     /* background-image: linear-gradient(to right bottom, #eb2f64cc, #ba265dcc); */
     border-radius: 1rem;
 }

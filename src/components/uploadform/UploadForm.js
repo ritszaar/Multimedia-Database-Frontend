@@ -2,6 +2,7 @@ import { wait } from "@testing-library/user-event/dist/utils";
 import { useState } from "react";
 import useInput from "../../hooks/use-input";
 import FormCard from "../formcard/FormCard";
+import LoadingSpinnerRed from "../loadingspinner/LoadingSpinnerRed";
 import ResponseModal from "../responsemodal/ResponseModal";
 import classes from "./UploadForm.module.css";
 
@@ -133,6 +134,7 @@ const UploadForm = () => {
         setWaitingForResponse(false);
         if (data.hasError) {
             if (data.error === "File exists") {
+                resetFile();
                 setTitleExists(true);
             } else {
                 console.error(data.error);
@@ -257,7 +259,7 @@ const UploadForm = () => {
                     message={modalMessage}
                 />
             )}
-            {waitingForResponse && <h1>Waiting for server...</h1>}
+            {waitingForResponse && <LoadingSpinnerRed />}
             {!waitingForResponse && <FormCard>
                 <form
                     className={`${classes["form"]}`}

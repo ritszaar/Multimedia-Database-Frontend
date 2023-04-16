@@ -1,0 +1,28 @@
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    margin-bottom: 1rem;
+    background-color: var(--color-primary);
+    /* background-image: linear-gradient(to right bottom, #eb2f64cc, #ba265dcc); */
+    border-radius: 1rem;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-spinner {
+    width: 20rem;
+    height: 20rem;
+    border: 2rem solid var(--color-primary); /* Light grey */
+    border-top: 2rem solid #d3d3d3; /* Black */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+}

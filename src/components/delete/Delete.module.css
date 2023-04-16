@@ -212,7 +212,7 @@
 .placeholder-content {
     margin: auto;
     /* width: 90%; */
-    background-color: #EC8FD0;
+    background-color: #d3d3d3;
     font-weight: 600;
     color: var(--color-black);
     font-size: 7rem;
